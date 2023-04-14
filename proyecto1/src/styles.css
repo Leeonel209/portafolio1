@@ -1,1 +1,338 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    background-color: #000;
+    background-image: url('https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    }
+
+li {
+    list-style: none;
+}
+
+a  {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: orange;
+   }
+
+
+/*header*/
+header {
+    position: relative;
+      padding: 0 2rem;
+    }
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 6rem;
+    
+}
+
+.navbar .toggle_btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor :pointer; 
+    display: none;
+}
+
+
+
+
+
+
+/*Presentacion*/
+
+.inicio{
+    background-size: cover;
+    height: 100vh;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+
+}
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: #161616;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 10px solid orange;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    padding: 10px;
+}
+.inicio .contenido-banner h2{
+    font-size: 17px;
+    font-weight: normal;
+    padding: 5px;
+}
+
+
+/*sobremi*/
+.sobremi{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 50px 50px;
+    
+  
+}
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+    font-size: 48px;
+    text-align: center;
+    padding: 30px 0;
+
+}
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 25px;
+    margin-bottom: 150px;
+}
+.sobremi .contenido-seccion p span{
+    color:orange;
+    font-weight: bold;
+}
+
+
+
+/* Habilidades*/
+.habilidades{
+    background-color: #252a2e00;
+    color: #fff;
+    padding: 50px 20px;
+}
+.habilidades .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.habilidades h2{
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0;
+
+}
+.habilidades .fila{
+    display: flex;
+}
+.habilidades .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.habilidades .fila .col h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.habilidades .habilidad > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.habilidades .habilidad .barra-skill{
+    height: 5px;
+    width: 80%;
+    background-color: #ffffff;
+    position: relative;
+    margin-bottom: 30px;
+}
+.habilidades .habilidad .progreso{
+    background-color: orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.habilidades .habilidad .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #202020;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+/* Estas clases se agregaran dinamicamente mediante javascript */
+
+.habilidades .habilidad .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 89%;}
+}
+
+.habilidades .habilidad .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes htmlcss {
+    0%{width: 0%;}
+    100%{width: 89%;}
+}
+
+.habilidades .habilidad .angular{
+    width: 0%;
+    animation: 2s angular forwards;
+}
+@keyframes angular {
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+.habilidades .habilidad .nodeJs{
+    width: 0%;
+    animation: 2s nodeJs forwards;
+}
+@keyframes nodeJs {
+    0%{width: 0%;}
+    100%{width: 81%;}
+}
+
+.habilidades .habilidad .git{
+    width: 0%;
+    animation: 2s git forwards;
+}
+@keyframes git {
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+
+.habilidades .habilidad .proactividad{
+    width: 0%;
+    animation: 2s proactividad forwards;
+}
+@keyframes proactividad {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.habilidades .habilidad .trabajo{
+    width: 0%;
+    animation: 2s trabajo forwards;
+}
+@keyframes trabajo {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.habilidades .habilidad .creatividad{
+    width: 0%;
+    animation: 2s creatividad forwards;
+}
+@keyframes creatividad {
+    0%{width: 0%;}
+    100%{width: 99%;}
+}
+
+.habilidades .habilidad .comunicación{
+    width: 0%;
+    animation: 2s comunicación forwards;
+}
+@keyframes comunicación {
+    0%{width: 0%;}
+    100%{width: 65%;}
+}
+
+.habilidades .habilidad .liderazgo{
+    width: 0%;
+    animation: 2s liderazgo forwards;}
+
+    @keyframes liderazgo {
+        0%{width: 0%;}
+        100%{width: 65%;}
+    }
+
+
+ /* formación */
+.resumen{
+    background-color: #ffffff;
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.resumen .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.resumen .contenido-seccion h2{
+    text-transform: uppercase;
+    font-size: 35px;
+}
+.resumen .contenido-seccion .info{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.resumen .contenido-seccion .info .col{
+    width: 45%;
+}
+.resumen .contenido-seccion .info .col .titulo{
+    display: inline-block;
+    color: orange;
+    font-weight: bold;
+    border: 2px solid orange;
+    padding: 10px;
+    border-radius: 10%;
+
+}
+.resumen .contenido-seccion .info .col table{
+    margin-top: 30px;
+}
+.resumen .contenido-seccion .info .col table .datos{
+    width: 40%;
+    border-bottom: 1px solid #000000;
+}
+.resumen .contenido-seccion .info .col table h4{
+    margin-top: 10px;
+}
+.resumen .contenido-seccion .info .col table h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.resumen .contenido-seccion .info .col table p{
+    font-size: 14px;
+}
